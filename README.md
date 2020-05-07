@@ -1,5 +1,19 @@
 # differnce from original version
 This version of zabbix-client has auth_token set as public, so you can access after the inizialization
+how to include in your composer.json:
+```
+"repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/r1si/zabbix-client"
+    }
+  ],
+  "require": {
+    ...
+    "r1si/zabbix-client": "^1.5",
+    ...
+  },
+```
 
 # zabbix-client
 
