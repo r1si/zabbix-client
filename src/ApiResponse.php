@@ -1,6 +1,6 @@
 <?php
 
-namespace kamermans\ZabbixClient;
+namespace r1si\ZabbixClient;
 
 use Graze\GuzzleHttp\JsonRpc\json_decode;
 use Graze\GuzzleHttp\JsonRpc\Message\Response as HttpResponse;
