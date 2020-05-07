@@ -33,7 +33,7 @@ $response = $client->request('apiinfo.version');
 echo "Server is running Zabbix $response\n";
 ```
 
-Note that `$response` is a `kamermans\ZabbixClient\ApiResponse` object that has some magical properties.  In the example above, the Zabbix endpoint `apiinfo.version` returns a single string, so you can use `$response` as a string as well.
+Note that `$response` is a `r1si\ZabbixClient\ApiResponse` object that has some magical properties.  In the example above, the Zabbix endpoint `apiinfo.version` returns a single string, so you can use `$response` as a string as well.
 
 Most endpoints return an associative array as a response:
 
@@ -50,14 +50,14 @@ foreach ($hosts as $host) {
 }
 ```
 
-As you can see, you can iterate over the response object (although it's still a `kamermans\ZabbixClient\ApiResponse`).
+As you can see, you can iterate over the response object (although it's still a `r1si\ZabbixClient\ApiResponse`).
 
 In this example we also passed an array of parameters as the second argument.
 
 ## Error Handling
 When the Zabbix API returns an error, it is wrapped up into a proper exception and thrown.
 
-There are three types of exceptions that you can catch inside the `kamermans\ZabbixClient` namespace:
+There are three types of exceptions that you can catch inside the `r1si\ZabbixClient` namespace:
  - `Exception`: base class used for generic exceptions.  All exceptions extend this one.
  - `ApiException`: all API calls that returned a parseable JSON response are wrapped by this exception which gives you a well-formed error message from Zabbix and access to raw response via `ApiException::getResponse()`.
  - `AuthException`: an extention of `ApiException` that only gets thrown for authentication errors so they can be handled differently.
@@ -89,7 +89,7 @@ This example lists all the system items in the Zabbix Server:
 
 require __DIR__.'/../vendor/autoload.php';
 
-use kamermans\ZabbixClient\ZabbixClient;
+use r1si\ZabbixClient\ZabbixClient;
 
 $client = new ZabbixClient(
     "http://myzabbixserver/zabbix/api_jsonrpc.php",
