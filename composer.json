@@ -1,20 +1,24 @@
 {
-    "name": "kamermans/zabbix-client",
+    "name": "r1si/zabbix-client",
     "license": "MIT",
     "type": "library",
     "authors": [
         {
             "name": "Steve Kamerman",
             "homepage": "https://github.com/kamermans"
+        },
+        {
+             "name": "Elia 'r1si' Baragiola",
+            "homepage": "https://r1si.com"
         }
     ],
     "require" : {
-        "php" : ">=5.4.0",
+        "php" : ">=7.1.0",
         "graze/guzzle-jsonrpc": "^3.2"
     },
     "autoload" : {
         "psr-4" : {
-            "kamermans\\ZabbixClient\\" : "src/"
+            "r1si\\ZabbixClient\\" : "src/"
         }
     }
 }
