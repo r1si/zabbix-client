@@ -1,3 +1,6 @@
+# differnce from original version
+This version of zabbix-client has auth_token set as public, so you can access after the inizialization
+
 # zabbix-client
 
 This is a simple, yet powerful Zabbix API client for PHP.  I have made no attempt to model the Zabbix API in PHP functions, but rather, I have made the interface extremely easy to use in order to query the Zabbix JSON-RPC API.
