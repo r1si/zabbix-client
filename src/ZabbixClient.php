@@ -10,7 +10,7 @@ use GuzzleHttp\Psr7\Request as HttpRequest;
 class ZabbixClient {
 
     private $client;
-    private $auth_token;
+    public $auth_token;
     private $request_id;
 
     public function __construct($url, $user, $pass) {
