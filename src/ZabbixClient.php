@@ -1,6 +1,6 @@
 <?php
 
-namespace kamermans\ZabbixClient;
+namespace r1si\ZabbixClient;
 
 use Graze\GuzzleHttp\JsonRpc;
 use Graze\GuzzleHttp\JsonRpc\Client as RpcClient;
