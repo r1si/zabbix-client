@@ -1,6 +1,6 @@
 <?php
 
-namespace kamermans\ZabbixClient;
+namespace r1si\ZabbixClient;
 
 class AuthException extends ApiException {
 
